@@ -159,4 +159,8 @@
     font-size: 16px;
     width: 20rem;
   }
+  .data ul li::before {
+    width: 20px;
+    height: 20px;
+  }
 }

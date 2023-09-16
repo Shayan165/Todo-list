@@ -2,25 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
   min-height: 100vh;
   width: 100%;
 }
-.container span{
-position: absolute;
-left: 46%;
-top: 10%;
-font-size: 30px;
-font-weight: 900;
-transform: translate(-50%,-50%);
+.container span {
+  position: absolute;
+  left: 46%;
+  top: 10%;
+  font-size: 30px;
+  font-weight: 900;
+  transform: translate(-50%, -50%);
 }
-.container  img{
- position: absolute;
- left: 55%;
- top: 3%;
+.container img {
+  position: absolute;
+  left: 55%;
+  top: 3%;
   height: 90px;
   width: 90px;
 }
@@ -91,13 +91,13 @@ transform: translate(-50%,-50%);
   border-radius: 40px;
   border: none;
   outline: none;
-  background-color:  crimson;
+  background-color: crimson;
   color: white;
 }
 
-.data ul button#edt{
+.data ul button#edt {
   position: absolute;
- right: 15%;
+  right: 15%;
   padding: 10px 20px;
   border-radius: 40px;
   border: none;
@@ -112,4 +112,29 @@ transform: translate(-50%,-50%);
 
 .data ul li.checked::before {
   background-image: url("images/checked.png");
+}
+
+/* ---- Media ------ */
+
+@media (max-width: 600px) {
+  .row {
+    width: 400px;
+  }
+  .row input {
+    width: 75%;
+  }
+
+  .container span {
+    font-size: 25px;
+  }
+  .container img {
+    top: 4%;
+    left: 56%;
+    height: 60px;
+    width: 60px;
+  }
+  .data ul li {
+    font-size: 18px;
+    width: 25rem;
+  }
 }
